@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import NavigationBar from '@/components/misc/navigationbar'
+import TopBanner from '@/public/main-banner.jpg'
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +19,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* <div className="bg-[rgb(17,17,17)]">
+          <div className="h-28 sm:h-28 flex items-center justify-center relative">
+            <Image
+              src={TopBanner}
+              alt="Main Banner"
+              className=""
+            />
+          </div>
+        </div> */}
+        <div className="">
+          <NavigationBar />
+        </div>
+        {children}
+      </body>
     </html>
   )
 }

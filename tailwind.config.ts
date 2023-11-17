@@ -10,8 +10,13 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'curved-splash': 'linear-gradient(to right, #ff7e5f 50%, transparent 50%), radial-gradient(circle at 50% 100%, #ff7e5f, transparent 100%)',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      fontFamily: {
+        greatvibes: 'greatvibes, cursive',
+        Heavitas: 'Heavitas, sans-serif'
       },
     },
   },
