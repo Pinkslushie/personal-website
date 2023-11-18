@@ -1,16 +1,23 @@
 "use client";
 
-import Section1 from '@/components/sections/section1'
-import Section2 from '@/components/sections/section2'
+import Introduction from '@/components/sections/introduction'
+import PetAdoptionWebsite from '@/components/sections/petadoptionwebsite'
+import FarmingSimulator from '@/components/sections/farmingsimulator'
+import ConsoleLineGame from '@/components/sections/consolelinegame'
+import AndroidApp from '@/components/sections/androidapp'
 
 export default function Home() {
   return (
     <div>
-      {/* Section 1 */}
-      <Section1 />
+      <Introduction />
 
-      {/* Section 2 */}
-      <Section2 />
+      <PetAdoptionWebsite />
+
+      <FarmingSimulator />
+
+      <AndroidApp />
+
+      <ConsoleLineGame />
     </div>
   )
 }

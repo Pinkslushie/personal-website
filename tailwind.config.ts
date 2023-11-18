@@ -14,6 +14,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      backgroundColor: {
+        'white-opacity-50': 'rgba(255, 255, 255, 0.5)',
+      },
       fontFamily: {
         greatvibes: 'greatvibes, cursive',
         Heavitas: 'Heavitas, sans-serif'
