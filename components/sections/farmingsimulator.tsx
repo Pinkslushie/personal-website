@@ -91,25 +91,25 @@ export default function FarmingSimulator() {
                                 <animated.img
                                     src={Game1.src}
                                     alt="Game 1"
-                                    className="rounded-lg mx-2 my-2"
+                                    className="rounded-lg mx-2 my-2 scale-90"
                                     style={fadeIn_Game1}
                                 />
                                 <animated.img
                                     src={Game2.src}
                                     alt="Game 2"
-                                    className="rounded-lg mx-2 my-2"
+                                    className="rounded-lg mx-2 my-2 scale-90"
                                     style={fadeIn_Game2}
                                 />
                                 <animated.img
                                     src={Game3.src}
                                     alt="Game 3"
-                                    className="rounded-lg mx-2 my-2"
+                                    className="rounded-lg mx-2 my-2 scale-90"
                                     style={fadeIn_Game3}
                                 />
                                 <animated.img
                                     src={Game4.src}
                                     alt="Game 4"
-                                    className="rounded-lg mx-2 my-2"
+                                    className="rounded-lg mx-2 my-2 scale-90"
                                     style={fadeIn_Game4}
                                 />
                             </div>

@@ -5,6 +5,7 @@ import PetAdoptionWebsite from '@/components/sections/petadoptionwebsite'
 import FarmingSimulator from '@/components/sections/farmingsimulator'
 import ConsoleLineGame from '@/components/sections/consolelinegame'
 import AndroidApp from '@/components/sections/androidapp'
+import Final from '@/components/sections/final'
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
       <AndroidApp />
 
       <ConsoleLineGame />
+
+      <Final />
     </div>
   )
 }
