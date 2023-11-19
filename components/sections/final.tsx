@@ -24,9 +24,13 @@ export default function FarmingSimulator() {
 
     const modalStyles = {
         content: {
-            width: '15%',
-            height: '27%',
+            width: '75%',
+            height: '30%',
             margin: 'auto',
+            '@screen lg': {
+                width: '15%',
+                height: '27%',
+            }
         },
     };
 
@@ -120,26 +124,26 @@ export default function FarmingSimulator() {
                                 className="p-8 rounded-md shadow-md items-center m-10"
                             >
                                 <div className="text-white text-3xl font-bold text-center pb-4 pt-4">
-                                    <animated.p style={finalText1} className="text-[40px]">This is the end! :D</animated.p>
-                                    <animated.p style={finalText2} className="text-[30px] mt-4 mb-4">
+                                    <animated.p style={finalText1} className="text-[25px] lg:text-[40px]">This is the end! :D</animated.p>
+                                    <animated.p style={finalText2} className="text-[20px] lg:text-[30px] mt-4 mb-4">
                                         Since you have made it this far, why don&apos;t you connect with me?
                                     </animated.p>
                                 </div>
-                                <div className="flex justify-center mt-4">
-                                    <animated.div style={finalIcon1} className="text-white mx-4 cursor-pointer" onClick={() => (window.location.href = 'https://instagram.com/boneetoflakes')}>
+                                <div className="flex flex-col lg:flex-row justify-center mt-4">
+                                    <animated.div style={finalIcon1} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2" onClick={() => (window.location.href = 'https://instagram.com/boneetoflakes')}>
                                         <InstagramIcon />
                                     </animated.div>
-                                    <animated.div style={finalIcon2} className="text-white mx-4 cursor-pointer" onClick={handleDiscordIconClick}>
+                                    <animated.div style={finalIcon2} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2" onClick={handleDiscordIconClick}>
                                         <DiscordIcon />
                                     </animated.div>
-                                    <animated.div style={finalIcon3} className="text-white mx-4 cursor-pointer" onClick={() => (window.location.href = 'https://steamcommunity.com/id/jadpichoo')}>
+                                    <animated.div style={finalIcon3} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2" onClick={() => (window.location.href = 'https://steamcommunity.com/id/jadpichoo')}>
                                         <SteamIcon />
                                     </animated.div>
-                                    <animated.div style={finalIcon4} className="text-white mx-4 cursor-pointer" onClick={() => (window.location.href = 'https://open.spotify.com/user/yp6h5esaufs3p5jhzcmujrwus')}>
+                                    <animated.div style={finalIcon4} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2" onClick={() => (window.location.href = 'https://open.spotify.com/user/yp6h5esaufs3p5jhzcmujrwus')}>
                                         <SpotifyIcon />
                                     </animated.div>
                                 </div>
-                                <animated.div className="mt-10" style={finalText3}>
+                                <animated.div className="mt-10 hidden lg:block" style={finalText3}>
                                     <p className="text-[20px]">*coughs* Website powered by NextJS 14 and TailwindCSS.</p>
                                 </animated.div>
                             </animated.div>

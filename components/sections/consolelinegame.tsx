@@ -98,9 +98,9 @@ export default function ConsoleLineGame() {
                         <div className="">
                             <animated.div
                                 style={{ ...fadeIn_Card1, textAlign: 'center' }}
-                                className="p-8 rounded-md shadow-md items-center m-10 bg-white-opacity-75 flex"
+                                className="p-8 rounded-md shadow-md items-center m-10 bg-white-opacity-75 lg:flex"
                             >
-                                <div className="w-4/12 flex items-start justify-start">
+                                <div className="w-full lg:w-4/12 flex items-start justify-start">
                                     <animated.img
                                         src={Console1.src}
                                         alt="Console 1"
@@ -108,11 +108,11 @@ export default function ConsoleLineGame() {
                                         style={fadeIn_Game1}
                                     />
                                 </div>
-                                <div className="w-8/12 text-left pr-4">
+                                <div className="w-full lg:w-8/12 pr-4">
                                     <div className="text-black text-3xl font-bold pb-4 pt-4">
-                                        <p className="text-3xl">Paradis Valley (Command Line Interface)</p>
+                                        <p className="text-3xl text-center lg:text-left">Paradis Valley (Command Line Interface)</p>
                                         <hr className="border-t-2 border-gray-300 mt-2" />
-                                        <p className="text-lg mt-2">
+                                        <p className="text-lg mt-2 text-justify">
                                             This game was made for one of my units, Data Structures and Patterns, built using C++.
                                             <br /><br />
                                             It is called Paradis Valley, a re-creation of my Farming Simulator but CLI version.
@@ -124,9 +124,9 @@ export default function ConsoleLineGame() {
 
                             <animated.div
                                 style={{ ...fadeIn_Card2, textAlign: 'center' }}
-                                className="p-8 rounded-md shadow-md items-center m-10 bg-white-opacity-75 flex"
+                                className="p-8 rounded-md shadow-md items-center m-10 bg-white-opacity-75 lg:flex"
                             >
-                                <div className="w-1/2 text-left pr-4">
+                                <div className="lg:w-1/2 w-full text-left pr-4">
                                     <div className="text-black text-3xl font-bold pb-4 pt-4">
                                         <p className="text-3xl">Data Structures</p>
                                         <hr className="border-t-2 border-gray-300 mt-2" />
@@ -144,7 +144,7 @@ export default function ConsoleLineGame() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="w-1/2 flex items-end justify-end">
+                                <div className="lg:w-1/2 w-full flex items-end justify-end">
                                     <animated.img
                                         src={Console2.src}
                                         alt="Console 2"

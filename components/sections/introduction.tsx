@@ -47,40 +47,40 @@ export default function Introduction() {
                     }}
                     className="min-h-screen text-white z-10"
                 >
-                    <div className="flex items-center m-28">
+                    <div className="flex items-center lg:flex-row flex-col m-28">
                         <animated.img
                             src={PersonalImage.src}
                             alt="Personal"
                             className="rounded-full w-64 h-64 object-cover"
                             style={fadeIn_Image}
                         />
-                        <div className="ml-8 w-5/12 text-justify">
-                            <animated.p className="text-[30px]" style={fadeIn_TextTop1}>
+                        <div className="lg:ml-8 w-full lg:w-5/12 text-justify lg:mx-0 mx-auto">
+                            <animated.p className="text-[25px] lg:text-[30px]" style={fadeIn_TextTop1}>
                                 Hello!
                             </animated.p>
                             <br />
-                            <animated.p className="text-[20px]" style={fadeIn_TextTop2}>
+                            <animated.p className="text-[17.5px] lg:text-[20px]" style={fadeIn_TextTop2}>
                                 My name&apos;s Jaden.
                             </animated.p>
-                            <animated.p className="text-[20px]" style={fadeIn_TextTop2}>
+                            <animated.p className="text-[17.5px] lg:text-[20px]" style={fadeIn_TextTop2}>
                                 I am presently a dedicated student pursuing Computer Science at Swinburne University with a primary focus on Software Development and a minor specialization in Big Data Analytics.
                             </animated.p>
                         </div>
                     </div>
-                    <div className="ml-36 w-6/12 text-justify bg-red-600 p-5 rounded-lg shadow-lg">
-                        <animated.p className="text-[30px]" style={fadeIn_TextTop1}>
+                    <div className="lg:ml-36 mb-16 lg:mb-0 mx-auto w-8/12 lg:w-6/12 text-justify bg-red-600 p-5 rounded-lg shadow-lg">
+                        <animated.p className="text-[25px] lg:text-[30px]" style={fadeIn_TextTop1}>
                             About Me
                         </animated.p>
                         <br />
-                        <animated.p className="text-[20px]" style={fadeIn_TextTop2}>
+                        <animated.p className="text-[15px] lg:text-[20px]" style={fadeIn_TextTop2}>
                             I have an unwavering interest in programming, specifically in the field of game development as I revolve around games since a very young age. Furthermore, I am a fast-learner that is able to learn new things (that interests me) at a fast rate.
                             <br /><br />
                             Have a look below to see what I have created so far (not that fascinating but eh)!
                         </animated.p>
                     </div>
                 </div>
-                <div className="absolute bottom-0 left-0 w-full">
-                    <img src={MatrixGIF.src} alt="Matrix" className="w-full" />
+                <div className="absolute top-0 left-0 w-full">
+                    <img src={MatrixGIF.src} alt="Matrix" className="w-full h-screen" />
                 </div>
             </div>
         </Element>

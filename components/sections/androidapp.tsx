@@ -98,41 +98,41 @@ export default function AndroidApp() {
                                     This was created using Android Studio (Kotlin) with the use of Google Firebase as the database.
                                 </p>
                             </div>
-                            <div className="flex flex-row justify-center items-center">
+                            <div className="flex flex-wrap lg:flex-row justify-center items-center">
                                 <animated.img
                                     src={Phone1.src}
                                     alt="Phone 1"
-                                    className="w-1/6 h-auto rounded-lg mr-2 transition-shadow drop-shadow-2xl"
+                                    className="lg:w-1/6 w-1/2 h-auto rounded-lg transition-shadow drop-shadow-2xl"
                                     style={fadeIn_Phone1}
                                 />
                                 <animated.img
                                     src={Phone2.src}
                                     alt="Phone 2"
-                                    className="w-1/6 h-auto rounded-lg mr-2 transition-shadow drop-shadow-2xl"
+                                    className="lg:w-1/6 w-1/2 h-auto rounded-lg transition-shadow drop-shadow-2xl"
                                     style={fadeIn_Phone2}
                                 />
                                 <animated.img
                                     src={Phone3.src}
                                     alt="Phone 3"
-                                    className="w-1/6 h-auto rounded-lg mr-2 transition-shadow drop-shadow-2xl"
+                                    className="lg:w-1/6 w-1/2 h-auto rounded-lg transition-shadow drop-shadow-2xl"
                                     style={fadeIn_Phone3}
                                 />
                                 <animated.img
                                     src={Phone4.src}
                                     alt="Phone 4"
-                                    className="w-1/6 h-auto rounded-lg mr-2 transition-shadow drop-shadow-2xl"
+                                    className="lg:w-1/6 w-1/2 h-auto rounded-lg transition-shadow drop-shadow-2xl"
                                     style={fadeIn_Phone4}
                                 />
                                 <animated.img
                                     src={Phone5.src}
                                     alt="Phone 5"
-                                    className="w-1/6 h-auto rounded-lg mr-2 transition-shadow drop-shadow-2xl"
+                                    className="lg:w-1/6 w-1/2 h-auto rounded-lg transition-shadow drop-shadow-2xl"
                                     style={fadeIn_Phone5}
                                 />
                                 <animated.img
                                     src={Phone6.src}
                                     alt="Phone 6"
-                                    className="w-1/6 h-auto rounded-lg mr-2 transition-shadow drop-shadow-2xl"
+                                    className="lg:w-1/6 w-1/2 h-auto rounded-lg transition-shadow drop-shadow-2xl"
                                     style={fadeIn_Phone6}
                                 />
                             </div>

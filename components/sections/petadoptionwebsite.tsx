@@ -62,17 +62,17 @@ export default function PetAdoptionWebsite() {
                                 <hr className="w-full border-t-2 border-gray-300 mt-2" />
                                 <p className="text-lg mt-2">This web application was created with vanilla frameworks, HTML5, CSS, JavaScript and PHP using XAMPP (MySQL)</p>
                             </div>
-                            <div className="flex flex-row w-6/12">
+                            <div className="flex flex-col lg:flex-row justify-center items-center">
                                 <animated.img
                                     src={Webstart1.src}
                                     alt="Webstart 1"
-                                    className="rounded-lg mr-2 -ml-2"
+                                    className="rounded-lg lg:w-1/2 lg:h-auto lg:mr-5 h-full w-full"
                                     style={fadeIn_Images1}
                                 />
                                 <animated.img
                                     src={Webstart2.src}
                                     alt="Webstart 2"
-                                    className="rounded-lg ml-2 mr-2"
+                                    className="rounded-lg lg:w-1/2 lg:h-auto mt-5 lg:mt-0 h-full w-full"
                                     style={fadeIn_Images2}
                                 />
                             </div>
