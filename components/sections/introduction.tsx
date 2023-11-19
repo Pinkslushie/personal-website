@@ -47,10 +47,10 @@ export default function Introduction() {
     }, []);
     return (
         <Element name="section1">
-            <div className="flex relative overflow-hidden">
+            <div className="min-h-screen flex relative overflow-hidden">
                 <div
                     style={{ backgroundImage: `url(${backgroundImage})` }}
-                    className="h-screen text-white z-10 bg-cover bg-center w-full"
+                    className="min-h-screen text-white z-10 bg-cover bg-center w-full"
                 >
                     <div className="flex items-center lg:flex-row flex-col mt-5 ml-20 mr-28 mb-5 lg:m-28">
                         <animated.img
