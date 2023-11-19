@@ -60,7 +60,7 @@ export default function PetAdoptionWebsite() {
                                     First Web Application
                                 </p>
                                 <hr className="w-full border-t-2 border-gray-300 mt-2" />
-                                <p className="text-lg mt-2">This web application was created with vanilla frameworks, HTML5, CSS, JavaScript and PHP using XAMPP (MySQL)</p>
+                                <p className="text-lg mt-2 text-justify lg:text-center">This web application was created with vanilla frameworks, HTML5, CSS, JavaScript and PHP using XAMPP (MySQL)</p>
                             </div>
                             <div className="flex flex-col lg:flex-row justify-center items-center">
                                 <animated.img

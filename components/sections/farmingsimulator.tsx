@@ -82,8 +82,9 @@ export default function FarmingSimulator() {
                             <div className="text-black text-3xl font-bold text-center pb-4 pt-4">
                                 <p className="text-3xl">First Game (Farming Simulator)</p>
                                 <hr className="w-full border-t-2 border-gray-300 mt-2" />
-                                <p className="text-lg mt-2">
+                                <p className="text-lg mt-2 text-justify lg:text-center">
                                     This game was created as part of my Object-Oriented Programming task, built using C# and SplashKit library.
+                                    <br /><br className="block lg:hidden" />
                                     The game mechanics were inspired by Stardew Valley and Harvest Moon.
                                 </p>
                             </div>

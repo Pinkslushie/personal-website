@@ -92,9 +92,9 @@ export default function AndroidApp() {
                                     Android Application
                                 </p>
                                 <hr className="w-full border-t-2 border-gray-300 mt-2" />
-                                <p className="text-lg mt-2 font-semibold">
+                                <p className="text-lg mt-2 font-semibold text-justify lg:text-center">
                                     Cytron inspired (please don&apos;t sue me lol) platform that allows users to add items to cart, check-out with them and view their order status.
-                                    <br />
+                                    <br /><br className="block lg:hidden" />
                                     This was created using Android Studio (Kotlin) with the use of Google Firebase as the database.
                                 </p>
                             </div>

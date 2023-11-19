@@ -37,6 +37,8 @@ export default function FarmingSimulator() {
             width: '75%',
             height: '30%',
             margin: 'auto',
+            borderRadius: '8px',
+            overflow: 'hidden',
             '@screen lg': {
                 width: '15%',
                 height: '27%',
@@ -105,6 +107,12 @@ export default function FarmingSimulator() {
         from: { opacity: 0 },
         config: config.default,
         delay: 2750,
+    });
+
+    const modalSpring = useSpring({
+        scale: isDiscordModalOpen ? 1 : 0,
+        opacity: isDiscordModalOpen ? 1 : 1,
+        config: config.stiff,
     });
 
     useEffect(() => {
@@ -271,7 +279,7 @@ export default function FarmingSimulator() {
                 contentLabel="Discord"
                 style={modalStyles}
             >
-                <div className="flex flex-col h-full justify-between">
+                <animated.div style={modalSpring} className="flex flex-col h-full justify-between overflow-hidden">
                     <div className="text-black">
                         <p className="text-center font-bold text-[20px]">Discord</p>
                         <p className="text-justify">I am unable to redirect you to my Discord, so here&apos;s my tag:</p>
@@ -279,7 +287,7 @@ export default function FarmingSimulator() {
                         <p className="text-center">j4dz.</p>
                     </div>
                     <button className="bg-red-600 hover:bg-red-700 p-3 rounded-md" onClick={closeDiscordModal}>Close</button>
-                </div>
+                </animated.div>
             </Modal>
         </Element>
     )
