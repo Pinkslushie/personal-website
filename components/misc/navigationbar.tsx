@@ -4,7 +4,7 @@ import Link from 'next/link';
 const NavigationBarDesktop = () => {
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-[999] text-xl hidden lg:block">
+        <nav className="fixed top-0 left-0 right-0 z-[999] text-xl hidden">
             <div className="flex justify-end">
                 <Link href="/" legacyBehavior={true}>
                     <a className="relative text-white py-4 px-6 uppercase transition duration-300 ease-in-out overflow-hidden group hover:text-gray-400">

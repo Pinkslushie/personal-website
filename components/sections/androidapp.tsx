@@ -12,6 +12,7 @@ import Phone6 from '@/public/images/androidapp/phone6.png';
 
 export default function AndroidApp() {
     const [isVisible, setIsVisible] = useState(false);
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
 
     const fadeIn_Card = useSpring({
         opacity: isVisible ? 1 : 0,
@@ -64,11 +65,14 @@ export default function AndroidApp() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 2100;
+            const currentScrollPos = window.scrollY;
+            const isScrolled = currentScrollPos > 2100 || currentScrollPos < prevScrollPos;
 
             if (isScrolled !== isVisible) {
                 setIsVisible(isScrolled);
             }
+
+            setPrevScrollPos(currentScrollPos);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -76,7 +80,7 @@ export default function AndroidApp() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [isVisible]);
+    }, [isVisible, prevScrollPos]);
 
     return (
         <Element name="section2">
