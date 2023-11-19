@@ -47,7 +47,7 @@ export default function Introduction() {
                     }}
                     className="min-h-screen text-white z-10"
                 >
-                    <div className="flex items-center lg:flex-row flex-col m-28">
+                    <div className="flex items-center lg:flex-row flex-col mt-5 ml-20 mr-28 mb-5 lg:m-28">
                         <animated.img
                             src={PersonalImage.src}
                             alt="Personal"
@@ -67,7 +67,7 @@ export default function Introduction() {
                             </animated.p>
                         </div>
                     </div>
-                    <div className="lg:ml-36 mb-16 lg:mb-0 mx-auto w-8/12 lg:w-6/12 text-justify bg-red-600 p-5 rounded-lg shadow-lg">
+                    <div className="lg:ml-36 mb-16 lg:mb-0 mx-auto w-9/12 lg:w-6/12 text-justify bg-red-600 p-5 rounded-lg shadow-lg">
                         <animated.p className="text-[25px] lg:text-[30px]" style={fadeIn_TextTop1}>
                             About Me
                         </animated.p>

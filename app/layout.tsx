@@ -2,8 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import NavigationBar from '@/components/misc/navigationbar'
-import TopBanner from '@/public/main-banner.jpg'
-import Image from 'next/image';
+import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,6 +32,7 @@ export default function RootLayout({
           <NavigationBar />
         </div>
         {children}
+        <Toaster />
       </body>
     </html>
   )

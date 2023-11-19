@@ -8,19 +8,29 @@ import InstagramIcon from '@/public/icons/InstagramIcon';
 import DiscordIcon from '@/public/icons/DiscordIcon';
 import SpotifyIcon from '@/public/icons/SpotifyIcon';
 import SteamIcon from '@/public/icons/SteamIcon';
+import RabbitSleeping from '@/public/images/final/rabbit_sleeping.gif';
 import Modal from 'react-modal';
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import toast from 'react-hot-toast';
 
 export default function FarmingSimulator() {
     const [isVisible, setIsVisible] = useState(false);
     const [isDiscordModalOpen, setDiscordModalOpen] = useState(false);
+    const supabase = createClientComponentClient();
+    const [userMessage, setUserMessage] = useState('');
+    const [userName, setUserName] = useState('');
+    const [submittedSuccess, setSubmittedSuccess] = useState<boolean>(false);
 
-    const handleDiscordIconClick = () => {
-        setDiscordModalOpen(true);
-    };
+    // const [lastSubmitTime, setLastSubmitTime] = useState<number>(() => {
+    //     // Retrieve the timestamp from localStorage on component mount
+    //     const storedTime = localStorage.getItem('lastSubmitTime');
+    //     return storedTime ? parseInt(storedTime, 10) : 0;
+    // });
 
-    const closeDiscordModal = () => {
-        setDiscordModalOpen(false);
-    };
+    // useEffect(() => {
+    //     // Save the timestamp to localStorage whenever it changes
+    //     localStorage.setItem('lastSubmitTime', lastSubmitTime.toString());
+    // }, [lastSubmitTime]);
 
     const modalStyles = {
         content: {
@@ -60,6 +70,13 @@ export default function FarmingSimulator() {
         from: { opacity: 0 },
         config: config.default,
         delay: 3000,
+    });
+
+    const finalText4 = useSpring({
+        opacity: isVisible ? 1 : 0,
+        from: { opacity: 0 },
+        config: config.default,
+        delay: 3500,
     });
 
     const finalIcon1 = useSpring({
@@ -106,6 +123,56 @@ export default function FarmingSimulator() {
         };
     }, [isVisible]);
 
+    const handleMessageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setUserMessage(e.target.value);
+    };
+
+    const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setUserName(e.target.value);
+    };
+
+    const handleDiscordIconClick = () => {
+        setDiscordModalOpen(true);
+    };
+
+    const closeDiscordModal = () => {
+        setDiscordModalOpen(false);
+    };
+
+    const handleSubmit = async () => {
+        if (!userMessage) {
+            toast.error("You need to input a message...")
+            return;
+        }
+
+        // const currentTime = new Date().getTime();
+        // const timeDifference = currentTime - lastSubmitTime;
+
+        // // Set your desired time limit (e.g., 1 minute)
+        // const timeLimit = 60000; // 1 minute in milliseconds
+
+        // if (timeDifference < timeLimit) {
+        //     toast.error(`Please wait for ${Math.ceil((timeLimit - timeDifference) / 1000)} seconds before submitting again.`);
+        //     return;
+        // }
+
+        const { data, error } = await supabase.from('messages').insert([
+            {
+                messageName: userName || 'Anonymous',
+                messageText: userMessage
+            },
+        ]);
+
+        if (error) {
+            console.error('Error submitting data to the database:', error);
+        } else {
+            console.log('Data submitted successfully:', data);
+            toast.success("Submitted successfully!");
+            setSubmittedSuccess(true);
+            // setLastSubmitTime(currentTime);
+        }
+    };
+
     return (
         <Element name="section3">
             <div className="min-h-screen relative">
@@ -129,22 +196,63 @@ export default function FarmingSimulator() {
                                         Since you have made it this far, why don&apos;t you connect with me?
                                     </animated.p>
                                 </div>
-                                <div className="flex flex-col lg:flex-row justify-center mt-4">
-                                    <animated.div style={finalIcon1} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2" onClick={() => (window.location.href = 'https://instagram.com/boneetoflakes')}>
+                                <div className="flex flex-row justify-center mt-4">
+                                    <animated.div style={finalIcon1} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={() => (window.location.href = 'https://instagram.com/boneetoflakes')}>
                                         <InstagramIcon />
                                     </animated.div>
-                                    <animated.div style={finalIcon2} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2" onClick={handleDiscordIconClick}>
+                                    <animated.div style={finalIcon2} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={handleDiscordIconClick}>
                                         <DiscordIcon />
                                     </animated.div>
-                                    <animated.div style={finalIcon3} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2" onClick={() => (window.location.href = 'https://steamcommunity.com/id/jadpichoo')}>
+                                    <animated.div style={finalIcon3} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={() => (window.location.href = 'https://steamcommunity.com/id/jadpichoo')}>
                                         <SteamIcon />
                                     </animated.div>
-                                    <animated.div style={finalIcon4} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2" onClick={() => (window.location.href = 'https://open.spotify.com/user/yp6h5esaufs3p5jhzcmujrwus')}>
+                                    <animated.div style={finalIcon4} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={() => (window.location.href = 'https://open.spotify.com/user/yp6h5esaufs3p5jhzcmujrwus')}>
                                         <SpotifyIcon />
                                     </animated.div>
                                 </div>
                                 <animated.div className="mt-10 hidden lg:block" style={finalText3}>
                                     <p className="text-[20px]">*coughs* Website powered by NextJS 14 and TailwindCSS.</p>
+                                </animated.div>
+
+                                <animated.div style={finalText4} className="bg-white-opacity-10 p-4 mt-4 w-1/2 mx-auto rounded-md">
+                                    {!submittedSuccess ? (
+                                        <div>
+                                            <p className="text-center font-bold text-lg mb-2">Talk to me; and yes, I will read them!</p>
+                                            <div className="flex flex-col">
+                                                <div className="mb-3">
+                                                    <label className="block text-left lg:text-center">Name (Can be left blank): </label>
+                                                    <input
+                                                        type="text"
+                                                        value={userName}
+                                                        onChange={handleNameChange}
+                                                        placeholder="Nick"
+                                                        className="border p-2 rounded-md text-black"
+                                                    />
+                                                </div>
+                                                <div className="mb-3">
+                                                    <label className="block text-left lg:text-center">Message: </label>
+                                                    <input
+                                                        type="text"
+                                                        value={userMessage}
+                                                        onChange={handleMessageChange}
+                                                        placeholder="Hi, I like you..."
+                                                        required
+                                                        className="border p-2 rounded-md text-black"
+                                                    />
+                                                </div>
+                                                <div className="mx-auto items-center justify-center">
+                                                    <button onClick={handleSubmit} className="bg-red-500 hover:bg-red-600 text-white p-2 rounded-md">
+                                                        Submit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ) : (
+                                        <div className="mb-5">
+                                            <img src={RabbitSleeping.src} alt="Rabbit Sleeping" className="mx-auto mt-4 w-48 h-48" />
+                                            <p>I have received your message! <br />Thank you :D</p>
+                                        </div>
+                                    )}
                                 </animated.div>
                             </animated.div>
                         </div>

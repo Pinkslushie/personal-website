@@ -17,6 +17,7 @@ const config: Config = {
       backgroundColor: {
         'white-opacity-50': 'rgba(255, 255, 255, 0.5)',
         'white-opacity-75': 'rgba(255, 255, 255, 0.75)',
+        'white-opacity-10': 'rgba(255, 255, 255, 0.1)',
       },
       fontFamily: {
         greatvibes: 'greatvibes, cursive',
