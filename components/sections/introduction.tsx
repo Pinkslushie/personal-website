@@ -5,10 +5,20 @@ import PersonalImage from '@/public/images/introduction/personal-image-1.jpg'
 import { useSpring, animated, config } from 'react-spring';
 import { useEffect, useState } from 'react';
 import MatrixGIF from '@/public/images/introduction/matrix-1.gif'
+import MobileBackground from '@/public/images/introduction/mobile-background.png';
 import { Link, Element } from 'react-scroll';
+import { useMediaQuery } from '@react-hook/media-query';
 
 export default function Introduction() {
     const [isVisible, setIsVisible] = useState(false);
+    const isLargeScreen = useMediaQuery('(min-width: 1024px)');
+
+    const backgroundStyle = {
+        backgroundImage: `url(${isLargeScreen ? BackgroundPart1.src : MobileBackground.src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        width: '100vw',
+    };
 
     const fadeIn_Image = useSpring({
         opacity: isVisible ? 1 : 0,
@@ -35,17 +45,14 @@ export default function Introduction() {
         setIsVisible(true);
     }, []);
 
+    const backgroundImage = window.innerWidth >= 1024 ? BackgroundPart1.src : MobileBackground.src;
+
     return (
         <Element name="section1">
             <div className="min-h-screen flex relative overflow-hidden">
                 <div
-                    style={{
-                        backgroundImage: `url(${BackgroundPart1.src})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        width: '100vw',
-                    }}
-                    className="min-h-screen text-white z-10"
+                    style={{ backgroundImage: `url(${backgroundImage})` }}
+                    className="min-h-screen text-white z-10 bg-cover bg-center w-full"
                 >
                     <div className="flex items-center lg:flex-row flex-col mt-5 ml-20 mr-28 mb-5 lg:m-28">
                         <animated.img
@@ -80,8 +87,8 @@ export default function Introduction() {
                         </animated.p>
                     </div>
                 </div>
-                <div className="absolute top-0 left-0 w-full">
-                    <img src={MatrixGIF.src} alt="Matrix" className="w-full h-screen" />
+                <div className="absolute top-0 left-0 w-full h-full">
+                    <img src={MatrixGIF.src} alt="Matrix" className="w-full h-full" />
                 </div>
             </div>
         </Element>
