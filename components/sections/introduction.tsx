@@ -11,14 +11,7 @@ import { useMediaQuery } from '@react-hook/media-query';
 
 export default function Introduction() {
     const [isVisible, setIsVisible] = useState(false);
-    const isLargeScreen = useMediaQuery('(min-width: 1024px)');
-
-    const backgroundStyle = {
-        backgroundImage: `url(${isLargeScreen ? BackgroundPart1.src : MobileBackground.src})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        width: '100vw',
-    };
+    const [backgroundImage, setBackgroundImage] = useState<string | undefined>(undefined);
 
     const fadeIn_Image = useSpring({
         opacity: isVisible ? 1 : 0,
@@ -43,10 +36,15 @@ export default function Introduction() {
 
     useEffect(() => {
         setIsVisible(true);
+        const handleResize = () => {
+            setBackgroundImage(window.innerWidth >= 1024 ? BackgroundPart1.src : MobileBackground.src);
+        };
+        handleResize(); // Initial background image based on window width
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
-
-    const backgroundImage = window.innerWidth >= 1024 ? BackgroundPart1.src : MobileBackground.src;
-
     return (
         <Element name="section1">
             <div className="min-h-screen flex relative overflow-hidden">
