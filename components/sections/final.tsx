@@ -196,7 +196,7 @@ export default function FarmingSimulator() {
                                         Since you have made it this far, why don&apos;t you connect with me?
                                     </animated.p>
                                 </div>
-                                <div className="grid grid-cols-2 lg:flex lg:flex-row justify-center mt-4">
+                                <div className="grid grid-cols-2 lg:flex lg:flex-row lg:justify-center">
                                     <animated.div style={finalIcon1} className="text-white mx-auto cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={() => (window.location.href = 'https://instagram.com/boneetoflakes')}>
                                         <InstagramIcon />
                                     </animated.div>
@@ -215,7 +215,7 @@ export default function FarmingSimulator() {
                                     <p className="text-[20px]">*coughs* Website powered by NextJS 14 and TailwindCSS.</p>
                                 </animated.div>
 
-                                <animated.div style={finalText4} className="bg-white-opacity-10 p-4 mt-4 w-1/2 mx-auto rounded-md">
+                                <animated.div style={finalText4} className="bg-white-opacity-10 p-4 mt-4 w-full mx-auto rounded-md">
                                     {!submittedSuccess ? (
                                         <div>
                                             <p className="text-center font-bold text-lg mb-2">Talk to me; and yes, I will read them!</p>
