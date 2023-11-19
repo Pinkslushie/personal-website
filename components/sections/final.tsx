@@ -188,11 +188,11 @@ export default function FarmingSimulator() {
                         <div className="flex items-center justify-center">
                             <animated.div
                                 style={{ ...fadeIn_Card, textAlign: 'center' }}
-                                className="p-8 rounded-md shadow-md items-center m-10"
+                                className="p-8 rounded-md shadow-md items-center lg:m-10"
                             >
-                                <div className="text-white text-3xl font-bold text-center pb-4 pt-4">
+                                <div className="text-white text-3xl font-bold text-center lg:pb-4 pt-4">
                                     <animated.p style={finalText1} className="text-[25px] lg:text-[40px]">This is the end! :D</animated.p>
-                                    <animated.p style={finalText2} className="text-[20px] lg:text-[30px] mt-4 mb-4">
+                                    <animated.p style={finalText2} className="text-[20px] lg:text-[30px] mt-4 lg:mb-4">
                                         Since you have made it this far, why don&apos;t you connect with me?
                                     </animated.p>
                                 </div>
@@ -215,12 +215,12 @@ export default function FarmingSimulator() {
                                     <p className="text-[20px]">*coughs* Website powered by NextJS 14 and TailwindCSS.</p>
                                 </animated.div>
 
-                                <animated.div style={finalText4} className="bg-white-opacity-10 p-4 mt-4 w-full mx-auto rounded-md">
+                                <animated.div style={finalText4} className="bg-white-opacity-10 p-4 lg:mt-4 w-full lg:w-1/2 mx-auto rounded-md">
                                     {!submittedSuccess ? (
                                         <div>
-                                            <p className="text-center font-bold text-lg mb-2">Talk to me; and yes, I will read them!</p>
+                                            <p className="text-center font-bold text-lg lg:mb-2">Talk to me; and yes, I will read them!</p>
                                             <div className="flex flex-col">
-                                                <div className="mb-3">
+                                                <div className="mb-1 lg:mb-3">
                                                     <label className="block text-left lg:text-left ml-2 lg:ml-0">Name (Can be left blank): </label>
                                                     <input
                                                         type="text"
@@ -230,7 +230,7 @@ export default function FarmingSimulator() {
                                                         className="border p-2 rounded-md text-black w-11/12 lg:w-full"
                                                     />
                                                 </div>
-                                                <div className="mb-3">
+                                                <div className="mb-1 lg:mb-3">
                                                     <label className="block text-left lg:text-left ml-2 lg:ml-0">Message: </label>
                                                     <input
                                                         type="text"
@@ -261,7 +261,7 @@ export default function FarmingSimulator() {
                 </div>
 
                 <div className="absolute bottom-0 w-full text-center text-white">
-                    <p className="text-[15px]">© 2023 - All rights reserved by Jaden - powered by NextJS 14 and TailwindCSS.</p>
+                    <p className="text-[10px] lg:text-[15px]">© 2023 - All rights reserved by Jaden - powered by NextJS 14 and TailwindCSS.</p>
                 </div>
             </div>
 
