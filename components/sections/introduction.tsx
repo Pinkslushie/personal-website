@@ -51,7 +51,7 @@ export default function Introduction() {
                         <animated.img
                             src={PersonalImage.src}
                             alt="Personal"
-                            className="rounded-full w-64 h-64 object-cover"
+                            className="rounded-full w-64 object-cover"
                             style={fadeIn_Image}
                         />
                         <div className="lg:ml-8 w-full lg:w-5/12 text-justify lg:mx-0 mx-auto">
