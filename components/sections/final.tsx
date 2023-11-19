@@ -200,7 +200,7 @@ export default function FarmingSimulator() {
                             >
                                 <div className="text-white text-3xl font-bold text-center lg:pb-4 pt-4">
                                     <animated.p style={finalText1} className="text-[25px] lg:text-[40px]">This is the end! :D</animated.p>
-                                    <animated.p style={finalText2} className="text-[20px] lg:text-[30px] mt-4 lg:mb-4">
+                                    <animated.p style={finalText2} className="text-[15px] lg:text-[30px] mt-4 lg:mb-4">
                                         Since you have made it this far, why don&apos;t you connect with me?
                                     </animated.p>
                                 </div>
@@ -257,9 +257,9 @@ export default function FarmingSimulator() {
                                             </div>
                                         </div>
                                     ) : (
-                                        <div className="mb-5">
-                                            <img src={RabbitSleeping.src} alt="Rabbit Sleeping" className="mx-auto mt-4 w-48 h-48" />
-                                            <p>I have received your message! <br />Thank you :D</p>
+                                        <div className="lg:mb-4">
+                                            <img src={RabbitSleeping.src} alt="Rabbit Sleeping" className="mx-auto lg:mt-4 lg:w-48 lg:h-48 w-40 h-40" />
+                                            <p className="text-[10px] lg:text-[16px]">I have received your message! <br />Thank you :D</p>
                                         </div>
                                     )}
                                 </animated.div>
