@@ -55,13 +55,14 @@ export default function Introduction() {
                             style={fadeIn_Image}
                         />
                         <div className="lg:ml-8 w-full lg:w-5/12 text-justify lg:mx-0 mx-auto">
-                            <animated.p className="text-[25px] lg:text-[30px]" style={fadeIn_TextTop1}>
+                            <animated.p className="text-[25px] lg:text-[30px] text-center lg:text-left font-greatvibes mt-2 lg:mt-0" style={fadeIn_TextTop1}>
                                 Hello!
                             </animated.p>
-                            <br />
+                            <br className="hidden lg:block" />
                             <animated.p className="text-[17.5px] lg:text-[20px]" style={fadeIn_TextTop2}>
                                 My name&apos;s Jaden.
                             </animated.p>
+                            <br className="block lg:hidden" />
                             <animated.p className="text-[17.5px] lg:text-[20px]" style={fadeIn_TextTop2}>
                                 I am presently a dedicated student pursuing Computer Science at Swinburne University with a primary focus on Software Development and a minor specialization in Big Data Analytics.
                             </animated.p>
