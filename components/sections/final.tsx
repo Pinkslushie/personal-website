@@ -196,20 +196,21 @@ export default function FarmingSimulator() {
                                         Since you have made it this far, why don&apos;t you connect with me?
                                     </animated.p>
                                 </div>
-                                <div className="flex flex-row justify-center mt-4">
-                                    <animated.div style={finalIcon1} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={() => (window.location.href = 'https://instagram.com/boneetoflakes')}>
+                                <div className="grid grid-cols-2 lg:flex lg:flex-row justify-center mt-4">
+                                    <animated.div style={finalIcon1} className="text-white mx-auto cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={() => (window.location.href = 'https://instagram.com/boneetoflakes')}>
                                         <InstagramIcon />
                                     </animated.div>
-                                    <animated.div style={finalIcon2} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={handleDiscordIconClick}>
+                                    <animated.div style={finalIcon2} className="text-white mx-auto cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={handleDiscordIconClick}>
                                         <DiscordIcon />
                                     </animated.div>
-                                    <animated.div style={finalIcon3} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={() => (window.location.href = 'https://steamcommunity.com/id/jadpichoo')}>
+                                    <animated.div style={finalIcon3} className="text-white mx-auto cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={() => (window.location.href = 'https://steamcommunity.com/id/jadpichoo')}>
                                         <SteamIcon />
                                     </animated.div>
-                                    <animated.div style={finalIcon4} className="text-white mx-auto lg:mx-4 cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={() => (window.location.href = 'https://open.spotify.com/user/yp6h5esaufs3p5jhzcmujrwus')}>
+                                    <animated.div style={finalIcon4} className="text-white mx-auto cursor-pointer w-1/2 scale-50 lg:scale-100" onClick={() => (window.location.href = 'https://open.spotify.com/user/yp6h5esaufs3p5jhzcmujrwus')}>
                                         <SpotifyIcon />
                                     </animated.div>
                                 </div>
+
                                 <animated.div className="mt-10 hidden lg:block" style={finalText3}>
                                     <p className="text-[20px]">*coughs* Website powered by NextJS 14 and TailwindCSS.</p>
                                 </animated.div>
@@ -220,24 +221,24 @@ export default function FarmingSimulator() {
                                             <p className="text-center font-bold text-lg mb-2">Talk to me; and yes, I will read them!</p>
                                             <div className="flex flex-col">
                                                 <div className="mb-3">
-                                                    <label className="block text-left lg:text-center">Name (Can be left blank): </label>
+                                                    <label className="block text-left lg:text-left ml-2 lg:ml-0">Name (Can be left blank): </label>
                                                     <input
                                                         type="text"
                                                         value={userName}
                                                         onChange={handleNameChange}
                                                         placeholder="Nick"
-                                                        className="border p-2 rounded-md text-black"
+                                                        className="border p-2 rounded-md text-black w-11/12 lg:w-full"
                                                     />
                                                 </div>
                                                 <div className="mb-3">
-                                                    <label className="block text-left lg:text-center">Message: </label>
+                                                    <label className="block text-left lg:text-left ml-2 lg:ml-0">Message: </label>
                                                     <input
                                                         type="text"
                                                         value={userMessage}
                                                         onChange={handleMessageChange}
                                                         placeholder="Hi, I like you..."
                                                         required
-                                                        className="border p-2 rounded-md text-black"
+                                                        className="border p-2 rounded-md text-black w-11/12 lg:w-full"
                                                     />
                                                 </div>
                                                 <div className="mx-auto items-center justify-center">

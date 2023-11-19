@@ -18,6 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+
       <body className={inter.className}>
         {/* <div className="bg-[rgb(17,17,17)]">
           <div className="h-28 sm:h-28 flex items-center justify-center relative">
