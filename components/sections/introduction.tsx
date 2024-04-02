@@ -45,6 +45,7 @@ export default function Introduction() {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
     return (
         <Element name="section1">
             <div className="min-h-screen flex relative overflow-hidden">
