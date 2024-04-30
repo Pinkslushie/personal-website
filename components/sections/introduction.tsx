@@ -1,7 +1,7 @@
 "use client";
 
 import BackgroundPart1 from '@/public/images/introduction/background-blank.png'
-import PersonalImage from '@/public/images/introduction/personal-image-1.jpg'
+import PersonalImage from '@/public/images/introduction/personal-image-1.jpeg'
 import { useSpring, animated, config } from 'react-spring';
 import { useEffect, useState } from 'react';
 import MatrixGIF from '@/public/images/introduction/matrix-1.gif'
