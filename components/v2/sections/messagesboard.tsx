@@ -160,7 +160,7 @@ export default function Introduction() {
                 )}
 
                 <div className="w-full lg:w-1/2 p-10">
-                    <div className="flex items-center justify-center text-[36px] font-brittany text-black mb-5 font-bold">
+                    <div className="flex items-center justify-center text-[26px] lg:text-[36px] font-brittany text-black mb-5 font-bold">
                         - Wall of Messages -
                     </div>
                     <div className="flex flex-wrap h-[75vh] overflow-y-auto">
