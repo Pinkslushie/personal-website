@@ -79,7 +79,7 @@ export default function Introduction() {
                             </div>
                             <div>
                                 Thought of communicating with me but too afraid? You can send me a message below
-                                and I'll see them! Non-private and consented messages might get featured in the Wall of Messages!
+                                and I&apos;ll see them! Non-private and consented messages might get featured in the Wall of Messages!
                             </div>
                             <form className="mt-5 mb-5 space-y-10">
                                 <div className="relative">

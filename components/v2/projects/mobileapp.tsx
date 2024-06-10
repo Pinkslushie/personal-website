@@ -15,7 +15,7 @@ export default function MobileAppProject() {
             </div>
             <div className="relative">
                 <div className="">
-                    Cytron inspired (please don't sue me lol) platform that allows users to add items to cart, check-out with them and view their order status. This was created using Android Studio (Kotlin) with the use of Google Firebase as the database.
+                    Cytron inspired (please don&apos;t sue me lol) platform that allows users to add items to cart, check-out with them and view their order status. This was created using Android Studio (Kotlin) with the use of Google Firebase as the database.
                 </div>
                 <div className="mt-4 grid grid-cols-2 lg:grid-cols-6 mb-10 lg:mb-0">
                     <div className="w-full h-48">

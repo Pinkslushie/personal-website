@@ -127,7 +127,7 @@ export default function Introduction() {
                                             Hello!
                                         </div>
                                         <div className="text-md text-left lg:text-justify text-[14px] lg:text-[16px]">
-                                            My name's Jaden.
+                                            My name&apos;s Jaden.
 
                                             I am presently a dedicated student pursuing Computer Science at Swinburne University with a primary focus on Software Development and a minor specialization in Big Data Analytics.
                                         </div>
@@ -253,7 +253,7 @@ export default function Introduction() {
                                 />
                                 <div className="font-bold text-[24px]">IoT Developer</div>
                                 <div className="p-2 text-left lg:text-justify">
-                                    I've developed IoT systems using Raspberry Pi (RPi) as the microcomputer and Arduino as the microcontroller. I utilize MQTT for efficient message queuing between devices and Flask for user-friendly front-end interfaces in IoT systems.
+                                    I&apos;ve developed IoT systems using Raspberry Pi (RPi) as the microcomputer and Arduino as the microcontroller. I utilize MQTT for efficient message queuing between devices and Flask for user-friendly front-end interfaces in IoT systems.
                                     <br /><br />
                                     Experience: Amazon Web Services (AWS), Flask, Nginx, Arduino Sketch
                                 </div>
