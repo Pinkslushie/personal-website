@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import NavigationBar from '@/components/misc/navigationbar'
+import NavigationBar from '@/components/v1/misc/navigationbar'
 import { Toaster } from 'react-hot-toast';
 import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Jad's Personal Website",
-  description: 'Getting to know me better!',
+  title: "BoneetoFlakes",
+  description: 'Getting to know Jad better!',
 }
 
 export default function RootLayout({

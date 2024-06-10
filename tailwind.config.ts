@@ -21,7 +21,14 @@ const config: Config = {
       },
       fontFamily: {
         greatvibes: 'greatvibes, cursive',
-        Heavitas: 'Heavitas, sans-serif'
+        Heavitas: 'Heavitas, sans-serif',
+        Brittany: 'BrittanySignature, cursive',
+        RobotoLight: 'Roboto-Light, sans-serif'
+      },
+      colors: {
+        'pastel-pink': '#FFD1DC',
+        'pastel-blue': '#A7C7E7',
+        'lavender': '#E6E6FA',
       },
     },
   },
