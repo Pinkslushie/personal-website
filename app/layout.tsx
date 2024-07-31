@@ -20,7 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        {/* Add the link tag for the favicon */}
+        <title>BoneetoFlakes</title>
+        <meta name="description" content="This is Jaden CHOO's personal/ portfolio website." />
+        <meta name="keywords" content="boneetoflakes, bonitoflakes, jaden choo wei chiat, jaden choo, jadenchoo, choo wei chiat, swinburne jaden choo, jaden choo swinburne, jaden swinburne, choo swinburne, JADEN CHOO WEI CHIAT, jaden CHOO wei chiat, Jaden CHOO, Jaden CHOO Wei Chiat, jaden quest marketing, quest marketing jaden, jaden choo quest marketing, quest marketing jaden choo" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Jaden CHOO Wei Chiat" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

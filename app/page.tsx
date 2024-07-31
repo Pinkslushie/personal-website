@@ -5,6 +5,7 @@ import NavigationBar from '@/components/v2/navigation/navbar';
 import MessageBoard from '@/components/v2/sections/messagesboard';
 import Projects from '@/components/v2/sections/projects';
 import { useEffect } from 'react';
+import Head from 'next/head';
 
 export default function Home() {
   useEffect(() => {
@@ -25,6 +26,14 @@ export default function Home() {
 
   return (
     <div className="bg-slate-100 font-roboto">
+      {/* <Head>
+        <title>BoneetoFlakes</title>
+        <meta name="description" content="This is a description of my page." />
+        <meta name="keywords" content="my, page, keywords" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="My Name" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head> */}
       <NavigationBar />
       <div id="section1">
         <Intro />
