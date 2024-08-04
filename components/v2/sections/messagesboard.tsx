@@ -25,6 +25,9 @@ export default function Introduction() {
     };
 
     const handleSubmit = async () => {
+        toast.error("You can no longer submit through this form. Please access the latest version of the website to submit.");
+        return;
+
         if (!userName) {
             toast.error("I need to know who this message is from...")
             return;

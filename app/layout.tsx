@@ -4,11 +4,13 @@ import './globals.css'
 import NavigationBar from '@/components/v1/misc/navigationbar'
 import { Toaster } from 'react-hot-toast';
 import Head from 'next/head';
+import NavBarV3 from '@/components/v3/navigationbar';
+import FooterV3 from '@/components/v3/footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "BoneetoFlakes",
+  title: "Boneeto Studios",
   description: 'Getting to know Jad better!',
 }
 
@@ -39,10 +41,14 @@ export default function RootLayout({
             />
           </div>
         </div> */}
-        <div className="">
+        {/* <div className="">
           <NavigationBar />
+        </div> */}
+        <NavBarV3 />
+        <div className="font-cascadia-code">
+          {children}
         </div>
-        {children}
+        <FooterV3 />
         <Toaster />
       </body>
     </html>
