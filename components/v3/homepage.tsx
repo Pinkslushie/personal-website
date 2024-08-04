@@ -18,7 +18,7 @@ export default function HomepageV3() {
                     className="drop-shadow-2xl object-cover lg:scale-[1] mt-20 lg:mt-36"
                 />
             </div>
-            <div className="absolute bottom-0 left-0 p-10 lg:p-20">
+            <div className="absolute bottom-10 lg:bottom-0 left-0 p-10 lg:p-20">
                 <div className="text-[24px] lg:text-[50px] text-black">
                     <span>A studio named Boneeto...</span>
                     <span>Flakes...</span>
@@ -27,7 +27,7 @@ export default function HomepageV3() {
                 </div>
                 <div>
                     <a href="/about">
-                        <div className="bg-black text-white px-4 py-2 w-1/2 lg:w-2/12 hover:bg-slate-800 hover:scale-105 duration-300 transition-all ease-in-out shadow-lg flex items-center justify-center space-x-2">
+                        <div className="bg-black text-white px-4 py-2 w-3/4 lg:w-2/12 hover:bg-slate-800 hover:scale-105 duration-300 transition-all ease-in-out shadow-lg flex items-center justify-center space-x-2">
                             <span>Read More</span>
                             <LiaLongArrowAltRightSolid size={24} />
                         </div>
