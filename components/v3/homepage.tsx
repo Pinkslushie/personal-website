@@ -16,6 +16,7 @@ export default function HomepageV3() {
                     src={Spinning.src}
                     alt="Spinning"
                     className="drop-shadow-2xl object-cover lg:scale-[1] mt-20 lg:mt-36"
+                    loading="lazy"
                 />
             </div>
             <div className="absolute bottom-28 lg:bottom-0 left-0 p-10 lg:p-20">
