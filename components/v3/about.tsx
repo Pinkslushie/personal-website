@@ -117,7 +117,7 @@ export default function AboutComponentV3() {
                                 <div className="text-justify">
                                     He has an unwavering interest in programming, particularly in game development,
                                     stemming from his early fascination with games. Additionally, he is a fast learner,
-                                    quickly mastering new skills that spark his interest. He holds a Bachelor's in Computer Science,
+                                    quickly mastering new skills that spark his interest. He holds a Bachelor&apos;s in Computer Science,
                                     majoring in Software Development and minoring in Big Data Analytics.
                                 </div>
                             </div>
