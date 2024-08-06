@@ -27,7 +27,7 @@ export default function FooterV3() {
                 </div>
 
                 {/* Copyright */}
-                <div className="text-sm">
+                <div className="text-[12px] lg:text-[14px]">
                     &copy; {new Date().getFullYear()} Boneeto. All rights reserved.
                 </div>
             </div>

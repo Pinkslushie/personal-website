@@ -10,17 +10,17 @@ import Banner from "@/public/images/v3/banner.png";
 import Image from 'next/image';
 
 const timelineData = [
-    { time: '2001', content: 'The year I came into this world, lol.' },
-    { time: '2021', content: 'Started Bachelor of Computer Science' },
-    { time: '2021', content: 'First web application using HTML, CSS, JS and PHP' },
-    { time: '2022', content: 'Object-Oriented Programming (OOP) Custom Program in C#' },
-    { time: '2022', content: 'Data Structures and Patterns Custom Program in C++' },
-    { time: '2023', content: 'Mobile Development using Kotlin' },
-    { time: '2023', content: 'Started Final Year Project (FYP) A' },
-    { time: '2023', content: 'Object-Oriented Programming (OOP) Custom Program in C#' },
-    { time: 'Jan 2024', content: 'Joined Quest Marketing' },
-    { time: '2024', content: 'Learnt about Machine Learning (ML) and Transfer Learning (TensorFlow 2 Zoo Model)' },
-    { time: '2024', content: 'To be continued...' },
+    { time: '2001', content: 'The year I came into this world, lol.', color: 'warning' as 'warning' },
+    { time: '2021', content: 'Started Bachelor of Computer Science', color: 'info' as 'info' },
+    { time: '2021', content: 'First web application using HTML, CSS, JS and PHP', color: 'info' as 'info' },
+    { time: '2022', content: 'Object-Oriented Programming (OOP) Custom Program in C#', color: 'success' as 'success' },
+    { time: '2022', content: 'Data Structures and Patterns Custom Program in C++', color: 'success' as 'success' },
+    { time: '2023', content: 'Mobile Development using Kotlin', color: 'primary' as 'primary' },
+    { time: '2023', content: 'Started Final Year Project (FYP) A', color: 'primary' as 'primary' },
+    { time: '2023', content: 'Object-Oriented Programming (OOP) Custom Program in C#', color: 'primary' as 'primary' },
+    { time: 'Jan 2024', content: 'Joined Quest Marketing', color: 'secondary' as 'secondary' },
+    { time: '2024', content: 'Learnt about Machine Learning (ML) and Transfer Learning (TensorFlow 2 Zoo Model)', color: 'secondary' as 'secondary' },
+    { time: '2024', content: 'To be continued...', color: 'error' as 'error' },
 ];
 
 export default function ProjectsComponentV3() {
@@ -57,29 +57,42 @@ export default function ProjectsComponentV3() {
             </div>
             <div className="flex items-center justify-center">
                 <div className="w-full lg:w-8/12">
-                    <div className="m-10 lg:m-20 space-y-10 text-black">
-                        <div className="font-bold text-[20px] text-center">
-                            My past web designs:
+                    <div className="space-y-10 text-black">
+                        <div className="m-10 lg:m-20 space-y-10">
+                            <div>
+                                <div className="font-bold text-[20px] text-center">
+                                    My past web designs:
+                                </div>
+                                <div className="flex flex-col items-center justify-center text-[20px] text-center">
+                                    <a href="/v1" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-800 duration-300 transition-all ease-in-out">V1</a>
+                                    <a href="/v2" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-800 duration-300 transition-all ease-in-out">V2</a>
+                                    <a href="#" className="text-blue-500 hover:text-blue-800 duration-300 transition-all ease-in-out">V3 (Current)</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="font-bold text-[20px] text-center">
+                                    My past projects:
+                                </div>
+                                <div className="flex flex-col items-center justify-center text-[20px] text-center ">
+                                    <a href="https://new-fyp-ems.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-800 duration-300 transition-all ease-in-out">Event Management and Attendance Tracking System for Swinburne</a>
+                                    <a href="#" className="text-blue-500 hover:text-blue-800 duration-300 transition-all ease-in-out">Ken&apos;s Kitchen</a>
+                                </div>
+                            </div>
                         </div>
-                        <div className="flex flex-col items-center justify-center text-[20px] text-blue-500">
-                            <a href="/v1" target="_blank" rel="noopener noreferrer">V1</a>
-                            <a href="/v2" target="_blank" rel="noopener noreferrer">V2</a>
-                            <a href="#">V3 (Current)</a>
-                        </div>
-                        <div className="font-bold text-[20px] text-center">
+                        <div className="font-bold text-[20px] text-center m-10 lg:m-20">
                             My past projects... soon to be click-able...
                         </div>
                         <Timeline position="alternate" sx={{ "& .MuiTimelineItem-root::before": { display: 'none' } }}>
                             {timelineData.map((t, index) => (
                                 <TimelineItem key={index}>
-                                    <TimelineOppositeContent color="text.secondary">
+                                    <TimelineOppositeContent className="font-bold text-gray-500 italic">
                                         {t.time}
                                     </TimelineOppositeContent>
                                     <TimelineSeparator>
-                                        <TimelineDot />
+                                        <TimelineDot variant="outlined" color={t.color as 'inherit' | 'grey' | 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning'} />
                                         {index < timelineData.length - 1 && <TimelineConnector />}
                                     </TimelineSeparator>
-                                    <TimelineContent>{t.content}</TimelineContent>
+                                    <TimelineContent className="font-bold">{t.content}</TimelineContent>
                                 </TimelineItem>
                             ))}
                         </Timeline>

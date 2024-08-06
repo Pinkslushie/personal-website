@@ -101,16 +101,20 @@ export default function ContactComponentV3() {
             <div className="flex items-center justify-center">
                 <div className="w-full lg:w-8/12">
                     <div className="m-10 lg:m-20 text-black lg:flex">
-                        <div className="w-full lg:w-1/2 text-black">
+                        <div className="w-full lg:w-1/2 text-black pr-0 lg:pr-20 text-justify space-y-6">
                             <div>
                                 <div className="text-black text-[26px]">
                                     Reach out to me!
                                 </div>
                                 <div>
-                                    Interested in me *wink*? Reach out to me!
-                                    <br />
-                                    *ppssstt, my socials are in the footer ;D
+                                    Interested in me *wink*? Drop me a message~
                                 </div>
+                            </div>
+                            <div className="text-justify">
+                                If you&apos;re looking for your own personal website, there is a chance I will do it for free if it is not too complicated!
+                            </div>
+                            <div className="italic">
+                                *ppssstt, my socials are in the footer ;D
                             </div>
                         </div>
                         {!submittedSuccess ? (
