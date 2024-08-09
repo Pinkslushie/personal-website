@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Toaster } from 'react-hot-toast';
@@ -12,7 +12,11 @@ export const metadata: Metadata = {
   description: 'Getting to know Jad better!',
   keywords: "boneetoflakes, bonitoflakes, jaden choo wei chiat, jaden choo, jadenchoo, choo wei chiat, swinburne jaden choo, jaden choo swinburne, jaden swinburne, choo swinburne, JADEN CHOO WEI CHIAT, jaden CHOO wei chiat, Jaden CHOO, Jaden CHOO Wei Chiat, jaden quest marketing, quest marketing jaden, jaden choo quest marketing, quest marketing jaden choo",
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1.0",
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
 }
 
 export default function RootLayout({
