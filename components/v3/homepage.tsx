@@ -19,7 +19,7 @@ export default function HomepageV3() {
                     loading="lazy"
                 />
             </div>
-            <div className="absolute bottom-28 lg:bottom-0 left-0 p-10 lg:p-20">
+            <div className="absolute bottom-20 lg:bottom-0 left-0 p-10 lg:p-20">
                 <div className="text-[24px] lg:text-[50px] text-black">
                     <span>A studio named Boneeto...</span>
                     <span>Flakes...</span>
