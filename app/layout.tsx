@@ -8,9 +8,9 @@ import FooterV3 from '@/components/v3/footer';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Boneeto Studios",
-  description: 'Getting to know Jad better!',
-  keywords: "boneetoflakes, bonitoflakes, jaden choo wei chiat, jaden choo, jadenchoo, choo wei chiat, swinburne jaden choo, jaden choo swinburne, jaden swinburne, choo swinburne, JADEN CHOO WEI CHIAT, jaden CHOO wei chiat, Jaden CHOO, Jaden CHOO Wei Chiat, jaden quest marketing, quest marketing jaden, jaden choo quest marketing, quest marketing jaden choo",
+  title: "Boneeto Studios - Innovating Creative Solutions",
+  description: "Discover Boneeto Studios and get to know Jaden Choo Wei Chiat. Explore innovative creative solutions and insights from Jaden, an expert in marketing and design.",
+  keywords: "Boneeto Studios, Jaden Choo Wei Chiat, creative solutions, marketing expertise, innovative design, professional insights",
   robots: "index, follow",
 }
 
