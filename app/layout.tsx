@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   description: "Discover Boneeto Studios and get to know Jaden Choo Wei Chiat. Explore innovative creative solutions and insights from Jaden, an expert in marketing and design.",
   keywords: "Boneeto Studios, Jaden Choo Wei Chiat, creative solutions, marketing expertise, innovative design, professional insights",
   robots: "index, follow",
+  verification: {
+    google: "xOQ1i6oWxShAuMPjdsnt-JVg6iUmQS9oj1BGUX3tnz0",
+  }
 }
 
 export const viewport: Viewport = {
