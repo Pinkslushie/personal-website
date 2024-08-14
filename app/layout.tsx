@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: "Boneeto Studios - Innovating Creative Solutions",
   description: "Discover Boneeto Studios and get to know Jaden Choo Wei Chiat. Explore innovative creative solutions and insights from Jaden, an expert in marketing and design.",
-  keywords: "Boneeto Studios, Jaden Choo Wei Chiat, creative solutions, marketing expertise, innovative design, professional insights",
+  keywords: "Boneeto Studios, Jad Choo, Jaden Choo Wei Chiat, Jaden Choo, Choo Wei Chiat, Swinburne Jaden Choo, Jaden Choo Swinburne, Jaden Swinburne, Choo Swinburne, Jaden Choo Quest Marketing, Quest Marketing Jaden Choo, Jaden Choo Malaysia, Kuching Malaysia, Malaysian Developer, Software Developer Malaysia, Tech Innovator Malaysia, Jaden Choo Projects, Boneeto Flakes, Bonito Flakes",
   robots: "index, follow",
   verification: {
     google: "xOQ1i6oWxShAuMPjdsnt-JVg6iUmQS9oj1BGUX3tnz0",
@@ -30,9 +30,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="google-site-verification" content="xOQ1i6oWxShAuMPjdsnt-JVg6iUmQS9oj1BGUX3tnz0" />
-      </Head>
       <body className={inter.className}>
         {/* <div className="bg-[rgb(17,17,17)]">
           <div className="h-28 sm:h-28 flex items-center justify-center relative">
