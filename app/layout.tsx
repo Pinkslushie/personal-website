@@ -4,6 +4,7 @@ import './globals.css'
 import { Toaster } from 'react-hot-toast';
 import NavBarV3 from '@/components/v3/navigationbar';
 import FooterV3 from '@/components/v3/footer';
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="google-site-verification" content="xOQ1i6oWxShAuMPjdsnt-JVg6iUmQS9oj1BGUX3tnz0" />
+      </Head>
       <body className={inter.className}>
         {/* <div className="bg-[rgb(17,17,17)]">
           <div className="h-28 sm:h-28 flex items-center justify-center relative">
