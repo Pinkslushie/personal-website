@@ -1,6 +1,7 @@
 import Banner from "@/public/images/v3/banner.png";
 import Image from 'next/image';
 import PersonalImage from "@/public/images/v3/personal.png";
+import JonathanImge from "@/public/images/v3/jonathan.jpeg";
 import LogoBlack from "@/public/images/v3/logoblack.png";
 
 const details = [
@@ -123,6 +124,27 @@ export default function AboutComponentV3() {
                             </div>
                         </div>
 
+                        {/* <div className="flex lg:flex-row flex-col">
+                            <div className="w-full lg:w-4/12">
+                                <Image
+                                    src={JonathanImge}
+                                    alt="Jonathan Image"
+                                    objectFit="cover"
+                                    className="w-72 h-72 shadow-lg rounded-md"
+                                />
+                            </div>
+                            <div className="w-full lg:w-8/12 mt-5 lg:mt-0 space-y-4">
+                                <div className="font-bold text-[18px]">
+                                    Then there&apos;s Jonathan...
+                                </div>
+                                <div className="italic text-justify">
+                                    The Janitor Intern
+                                </div>
+                                <div className="text-justify">
+                                    Sweep, sweep, sweep...
+                                </div>
+                            </div>
+                        </div> */}
 
                         <div className="flex lg:flex-row flex-col">
                             <div className="w-full lg:w-4/12">
@@ -153,7 +175,7 @@ export default function AboutComponentV3() {
                         </div>
 
                         <div className="font-bold text-[20px]">
-                            What can I do?
+                            What can Jaden do?
                         </div>
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                             {details.map((card, index) => (

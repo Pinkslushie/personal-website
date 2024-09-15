@@ -43,11 +43,9 @@ export default function RootLayout({
         {/* <div className="">
           <NavigationBar />
         </div> */}
-        <NavBarV3 />
         <div className="font-cascadia-code">
           {children}
         </div>
-        <FooterV3 />
         <Toaster />
       </body>
     </html>
