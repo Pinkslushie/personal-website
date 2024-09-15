@@ -103,7 +103,7 @@ export default function NameCardComponent() {
                         />
                     </div> */}
 
-                    <a href="tel:+601116181095" className="absolute bottom-4 right-4">
+                    <a href="tel:+601116181095" className="fixed bottom-4 right-4">
                         <div className="bg-purple-300 p-3 flex items-center justify-center rounded-full">
                             <IoPersonAddOutline size={28} />
                         </div>
