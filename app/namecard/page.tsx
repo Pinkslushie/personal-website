@@ -33,7 +33,7 @@ export default function NameCardPage() {
                             visitsCount: newVisitCount,
                             visitsLastUpdated: new Date().toISOString()  // Update timestamp to now
                         })
-                        .eq('visitsPage', 'projects');
+                        .eq('visitsPage', 'namecard');
 
                     if (updateError) {
                         // console.error('Error updating visit count:', updateError);
@@ -65,6 +65,8 @@ export default function NameCardPage() {
     }, []);
 
     return (
-        <NameCardComponent />
+        <div>
+            <NameCardComponent />
+        </div>
     )
 }

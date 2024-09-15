@@ -8,8 +8,8 @@ import { TbWorldWww } from "react-icons/tb";
 
 export default function NameCardComponent() {
     return (
-        <>
-            <div className="hidden lg:flex items-center justify-center h-screen text-black bg-gradient-to-br from-yellow-100 to-pink-100">
+        <div className="bg-slate-100">
+            <div className="hidden lg:flex items-center justify-center max-h-screen text-black bg-gradient-to-br from-yellow-100 to-pink-100">
                 {/* <div className="relative w-8/12 h-screen text-black">
                     <div className="h-[30%]">
                         <Image
@@ -42,20 +42,20 @@ export default function NameCardComponent() {
                 </div>
             </div>
             {/* Mobile View Text */}
-            <div className="block lg:hidden">
-                <div className="relative h-screen text-black">
-                    <div className="h-[50%] bg-gradient-to-br from-pink-300 to-purple-300 relative">
+            <div className="block lg:hidden min-h-screen">
+                <div className="relative min-h-screen text-black">
+                    <div className="h-[50%] relative">
                         <div className="absolute top-1/2 -right-[4.5rem] transform -translate-y-1/2 -rotate-90 bg-white px-4 py-2 rounded-lg shadow-lg">
                             Boneeto Studios
                         </div>
                         <Image
                             src={PersonalImage}
                             alt="Personal Image"
-                            className="w-full h-full object-cover object-[50%_10%]"
+                            className="w-full h-80 object-cover object-[50%_10%]"
                         />
                     </div>
 
-                    <div className="h-[50%] bg-slate-100 flex justify-center pt-8">
+                    <div className="h-[50%] flex justify-center pt-8">
                         <div className="flex flex-col items-center space-y-3 pr-10 pl-10">
                             <div className="flex flex-col border-l-4 border-l-slate-500 pl-5">
                                 <span className="text-[20px] font-bold">Jaden CHOO</span>
@@ -103,13 +103,13 @@ export default function NameCardComponent() {
                         />
                     </div> */}
 
-                    <a href="tel:+601116181095">
-                        <div className="absolute bottom-4 right-4 bg-purple-300 p-3 flex items-center justify-center rounded-full">
-                            <IoPersonAddOutline size={20} />
+                    <a href="tel:+601116181095" className="absolute bottom-4 right-4">
+                        <div className="bg-purple-300 p-3 flex items-center justify-center rounded-full">
+                            <IoPersonAddOutline size={28} />
                         </div>
                     </a>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
