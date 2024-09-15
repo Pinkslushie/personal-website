@@ -42,8 +42,8 @@ export default function NameCardComponent() {
                 </div>
             </div>
             {/* Mobile View Text */}
-            <div className="block lg:hidden min-h-screen">
-                <div className="relative min-h-screen text-black">
+            <div className="block lg:hidden h-screen">
+                <div className="relative text-black">
                     <div className="h-[50%] relative">
                         <div className="absolute top-1/2 -right-[4.5rem] transform -translate-y-1/2 -rotate-90 bg-white px-4 py-2 rounded-lg shadow-lg">
                             Boneeto Studios
@@ -103,7 +103,7 @@ export default function NameCardComponent() {
                         />
                     </div> */}
 
-                    <a href="tel:+601116181095" className="fixed bottom-4 right-4">
+                    <a href="tel:+601116181095" className="fixed bottom-8 right-4">
                         <div className="bg-purple-300 p-3 flex items-center justify-center rounded-full">
                             <IoPersonAddOutline size={28} />
                         </div>
