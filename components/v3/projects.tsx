@@ -74,7 +74,9 @@ export default function ProjectsComponentV3() {
                                     My past projects:
                                 </div>
                                 <div className="flex flex-col items-center justify-center text-[20px] text-center ">
-                                    <a href="https://new-fyp-ems.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-800 duration-300 transition-all ease-in-out">Event Management and Attendance Tracking System for Swinburne</a>
+                                    <a href="https://new-fyp-ems.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-800 duration-300 transition-all ease-in-out">Event Management and Attendance Tracking System for Swinburne (NextJS 13, Node.js, TailwindCSS, PostgreSQL)</a>
+                                    <a href="https://livan-handicraft.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-800 duration-300 transition-all ease-in-out">Livan Handicraft (NextJS 14, Node.js, TailwindCSS)</a>
+                                    <a href="https://resourcesmachinery.com/resourcesmachinery/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-800 duration-300 transition-all ease-in-out">Resources Machinery Sdn. Bhd. (PHP, Bootstrap)</a>
                                     <a href="#" className="text-blue-500 hover:text-blue-800 duration-300 transition-all ease-in-out">Ken&apos;s Kitchen</a>
                                 </div>
                             </div>
